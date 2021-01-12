@@ -18,12 +18,12 @@
 	// As far as I know, OTX is based on TFS_03, so make sure TFS version is configured TFS_03
 	$config['CustomVersion'] = false;
 
-	$config['site_title'] = 'PokemonOT';
+	$config['site_title'] = 'Pokemon';
 	$config['site_title_context'] = 'Fan Made Poketibia Game';
-	$config['site_url'] = "http://localhost/website/";
+	$config['site_url'] = "http://pokedex.sytes.net/Pokemon/www";
 
 	// Path to server folder without "\" (or "/") at the end, ex: C:\Users\Username\Documents\GitHub\forgottenserver
-	$config['server_path'] = 'C:\xampp\htdocs\server';
+	$config['server_path'] = 'C:\xampp\htdocs\Pokemon\servidor';
 
 	// ------------------------ \\
 	// MYSQL CONNECTION DETAILS \\
@@ -73,6 +73,58 @@
 		array(1501,100,"Killing in the Name of",0),
 		array(1502,150,"Killing in the Name of",0),
 		array(65001,100,"Killing in the Name of",0),
+		array(65002,150,"Killing in the Name of",0),
+		array(65003,300,"Killing in the Name of",0),
+		array(65004,3,"Killing in the Name of",0),
+		array(65005,300,"Killing in the Name of",0),
+		array(65006,150,"Killing in the Name of",0),
+		array(65007,200,"Killing in the Name of",0),
+		array(65008,300,"Killing in the Name of",0),
+		array(65009,300,"Killing in the Name of",0),
+		array(65010,300,"Killing in the Name of",0),
+		array(65011,300,"Killing in the Name of",0),
+		array(65012,300,"Killing in the Name of",0),
+		array(65013,300,"Killing in the Name of",0),
+		array(65014,300,"Killing in the Name of",1),
+		array(12110,2,"The Inquisition",0),
+		array(12111,7,"The Inquisition",0),
+		array(12112,3,"The Inquisition",0),
+		array(12113,6,"The Inquisition",0),
+		array(12114,3,"The Inquisition",0),
+		array(12115,3,"The Inquisition",0),
+		array(12116,3,"The Inquisition",0),
+		array(12117,5,"The Inquisition",1),
+		array(330,3,"Sam's Old Backpack",1),
+		array(12121,3,"The Ape City",0),
+		array(12122,5,"The Ape City",0),
+		array(12123,3,"The Ape City",0),
+		array(12124,3,"The Ape City",0),
+		array(12125,3,"The Ape City",0),
+		array(12126,3,"The Ape City",0),
+		array(12127,4,"The Ape City",0),
+		array(12128,3,"The Ape City",0),
+		array(12129,3,"The Ape City",1),
+		array(12101,1,"The Ancient Tombs",0),
+		array(12102,1,"The Ancient Tombs",0),
+		array(12103,1,"The Ancient Tombs",0),
+		array(12104,1,"The Ancient Tombs",0),
+		array(12105,1,"The Ancient Tombs",0),
+		array(12106,1,"The Ancient Tombs",0),
+		array(12107,1,"The Ancient Tombs",1),
+		array(12022,3,"Barbarian Test Quest",0),
+		array(12022,3,"Barbarian Test Quest",0),
+		array(12022,3,"Barbarian Test Quest",1),
+		array(12025,3,"The Ice Islands Quest",0),
+		array(12026,5,"The Ice Islands Quest",0),
+		array(12027,3,"The Ice Islands Quest",0),
+		array(12028,2,"The Ice Islands Quest",0),
+		array(12029,6,"The Ice Islands Quest",0),
+		array(12030,8,"The Ice Islands Quest",0),
+		array(12031,3,"The Ice Islands Quest",0),
+		array(12032,4,"The Ice Islands Quest",0),
+		array(12033,2,"The Ice Islands Quest",0),
+		array(12034,2,"The Ice Islands Quest",0),
+		array(12035,2,"The Ice Islands Quest",0),
 		array(12036,6,"The Ice Islands Quest",1),
 	);
 
@@ -96,8 +148,109 @@
 			'Allow Cookies?',
 			'With a perfectly harmless smile you fooled all of those wicecrackers into eating your exploding cookies. Consider a boy or girl scout outfit next time to make the trick even better.',
 			'points' => '10', // 1-3 points (1 star), 4-6 points (2 stars), 7-9 points(3 stars), 10 points => (4 stars)
-			'secret' => true // show "secret" badg
-		
+			'secret' => true // show "secret" badge
+		),
+		30002 => array(
+			'Backpack Tourist',
+			'If someone lost a random thing in a random place, you\'re probably a good person to ask and go find it, even if you don\'t know what and where.',
+			'points' => '7'
+		),
+		30003 => array(
+			'Bearhugger',
+			'Warm, furry and cuddly - though that same bear you just hugged would probably rip you into pieces if he had been conscious, he reminded you of that old teddy bear which always slept in your bed when you were still small.',
+			'points' => '4'
+		),
+		30004 => array(
+			'Bone Brother',
+			'You\'ve joined the undead bone brothers - making death your enemy and your weapon as well. Devouring what\'s weak and leaving space for what\'s strong is your primary goal.',
+			'points' => '1'
+		),
+		30005 => array(
+			'Chorister',
+			'Lalalala... you now know the cult\'s hymn sung in Liberty Bay by heart. Not that hard, considering that it mainly consists of two notes and repetitive lyrics.',
+			'points' => '1'
+		),
+		30006 => array(
+			'Fountain of Life',
+			'You found and took a sip from the Fountain of Life. Thought it didn\'t grant you eternal life, you feel changed and somehow at peace.',
+			'points' => '1',
+			'secret' => true
+		),
+		30007 => array(
+			'Here, Fishy Fishy!',
+			'Ah, the smell of the sea! Standing at the shore and casting a line is one of your favourite activities. For you, fishing is relaxing - and at the same time, providing easy food. Perfect!',
+			'points' => '1'
+		),
+		30008 => array(
+			'Honorary Barbarian',
+			'You\'ve hugged bears, pushed mammoths and proved your drinking skills. And even though you have a slight hangover, a partially fractured rib and some greasy hair on your tongue, you\'re quite proud to call yourself a honorary barbarian from now on.',
+			'points' => '1'
+		),
+		30009 => array(
+			'Huntsman',
+			'You\'re familiar with hunting tasks and have carried out quite a few already. A bright career as hunter for the Paw & Fur society lies ahead!',
+			'points' => '2'
+		),
+		300010 => array(
+			'Just in Time',
+			'You\'re a fast runner and are good at delivering wares which are bound to decay just in the nick of time, even if you can\'t use any means of transportation or if your hands get cold or smelly in the process.',
+			'points' => '1'
+		),
+		30011 => array(
+			'Matchmaker',
+			'You don\'t believe in romance to be a coincidence or in love at first sight. In fact - love potions, bouquets of flowers and cheesy poems do the trick much better than ever could. Keep those hormones flowing!',
+			'points' => '1',
+			'secret' => true
+		),
+		30012 => array(
+			'Nightmare Knight',
+			'You follow the path of dreams and that of responsibility without self-centered power. Free from greed and selfishness, you help others without expecting a reward.',
+			'points' => '1',
+			'secret' => true
+		),
+		30013 => array(
+			'Party Animal',
+			'Oh my god, it\'s a paaaaaaaaaaaarty! You\'re always in for fun, friends and booze and love being the center of attention. There\'s endless reasons to celebrate! Woohoo!',
+			'points' => '1',
+			'secret' => true
+		),
+		30014 => array(
+			'Secret Agent',
+			'Pack your spy gear and get ready for some dangerous missions in service of a secret agency. You\'ve shown you want to - but can you really do it? Time will tell.',
+			'points' => '1',
+			'secret' => true
+		),
+		30015 => array(
+			'Talented Dancer',
+			'You\'re a lord or lady of the dance - and not afraid to use your skills to impress tribal gods. One step to the left, one jump to the right, twist and shout!',
+			'points' => '1'
+		),
+		30016 => array(
+			'Territorial',
+			'Your map is your friend - always in your back pocket and covered with countless marks of interesting and useful locations. One could say that you might be lost without it - but luckily there\'s no way to take it from you.',
+			'points' => '1'
+		),
+		30017 => array(
+			'Worm Whacker',
+			'Weehee! Whack those worms! You sure know how to handle a big hammer.',
+			'points' => '1',
+			'secret' => true
+		),
+		30018 => array(
+			'Allowance Collector',
+			'You certainly have your ways when it comes to acquiring money. Many of them are pink and paved with broken fragments of porcelain.',
+			'points' => '1'
+		),
+		30019 => array(
+			'Amateur Actor',
+			'You helped bringing Princess Buttercup, Doctor Dumbness and Lucky the Wonder Dog to life - and will probably dream of them tonight, since you memorised your lines perfectly. What a .. special piece of.. screenplay.',
+			'points' => '2'
+		),
+		30020 => array(
+			'Animal Activist',
+			'You have a soft spot for little, weak animals, and you do everything in your power to protect them - even if you probably eat dragons for breakfast.',
+			'points' => '2',
+			'secret' => true
 		),
 	);
 
@@ -121,7 +274,7 @@
 			'fromVoc' => false
 		),
 		1 => array(
-			'name' => 'Entrenador Pokemon',
+			'name' => 'Pokemon Trainer',
 			'fromVoc' => false
 		)
 	);
@@ -131,14 +284,14 @@
 		- Currently used for admin_skills page. */
 	$config['vocations_gain'] = array(
 		0 => array(
-			'hp' => 20,
-			'mp' => 20,
-			'cap' => 500
+			'hp' => 30,
+			'mp' => 30,
+			'cap' => 1
 		),
 		1 => array(
-			'hp' => 20,
-			'mp' => 20,
-			'cap' => 500
+			'hp' => 30,
+			'mp' => 30,
+			'cap' => 1
 		)
 	);
 	// Town ids and names: (In RME map editor, open map, click CTRL + T to view towns, their names and their IDs.
@@ -171,10 +324,13 @@
 	);
 
 	// Leave on black square in map and player should get teleported to their selected town.
-	// If chars get buggy set this position to a beginner location to force players there. 5002] [Y: 804] [Z: 7].
+	// If chars get buggy set this position to a beginner location to force players there.
 	$config['default_pos'] = array(
-		'x' => 3337,
-		'y' => 811,
+		//'x' => 5000,
+		//'y' => 805,
+		//'z' => 6,
+		'x' => 5000,
+		'y' => 805,
 		'z' => 6,
 	);
 
@@ -198,7 +354,7 @@
 	// ---------------- \\
 
 	// Max characters on each account:
-	$config['max_characters'] = 7;
+	$config['max_characters'] = 10;
 
 	// Available character vocation users can choose (specify vocation ID).
 	$config['available_vocations'] = array(1);
@@ -209,11 +365,11 @@
 
 	$config['player'] = array(
 		'base' => array(
-			'level' => 10,
-			'health' => 200,
-			'mana' => 200,
-			'cap' => 200,
-			'soul' => 100
+			'level' => 30,
+			'health' => 600,
+			'mana' => 600,
+			'cap' => 6,
+			'soul' => 10,
 		),
 		// Health, mana cap etc are calculated with $config['vocations_gain'] and 'base' values of $config['player']
 		'create' => array(
@@ -226,25 +382,25 @@
 			'skills' => array( // See $config['vocations'] for proper vocation names of these IDs
 				// No vocation
 				0 => array(
-					'magic' => 0,
-					'fist' => 10,
-					'club' => 10,
-					'axe' => 10,
-					'sword' => 10,
-					'dist' => 10,
-					'shield' => 10,
-					'fishing' => 10,
+					'magic' => 10,
+					'fist' => 1,
+					'club' => 2,
+					'axe' => 3,
+					'sword' => 4,
+					'dist' => 5,
+					'shield' => 6,
+					'fishing' => 7,
 				),
 				// Sorcerer
 				1 => array(
-					'magic' => 0,
-					'fist' => 10,
-					'club' => 10,
-					'axe' => 10,
-					'sword' => 10,
-					'dist' => 10,
-					'shield' => 10,
-					'fishing' => 10,
+					'magic' => 10,
+					'fist' => 1,
+					'club' => 2,
+					'axe' => 3,
+					'sword' => 4,
+					'dist' => 5,
+					'shield' => 6,
+					'fishing' => 7,
 				),
 				// Druid
 				2 => array(
