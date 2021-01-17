@@ -18,12 +18,12 @@
 	// As far as I know, OTX is based on TFS_03, so make sure TFS version is configured TFS_03
 	$config['CustomVersion'] = false;
 
-	$config['site_title'] = 'Pokemon';
+	$config['site_title'] = 'Pokemon All-Stars';
 	$config['site_title_context'] = 'Fan Made Poketibia Game';
-	$config['site_url'] = "http://pokedex.sytes.net/Pokemon/www";
+	$config['site_url'] = "http://pokedex.sytes.net/website";
 
 	// Path to server folder without "\" (or "/") at the end, ex: C:\Users\Username\Documents\GitHub\forgottenserver
-	$config['server_path'] = 'C:\xampp\htdocs\Pokemon\servidor';
+	$config['server_path'] = 'C:\xampp\htdocs\server';
 
 	// ------------------------ \\
 	// MYSQL CONNECTION DETAILS \\
@@ -36,7 +36,7 @@
 	$config['sqlPassword'] = '';
 
 	// The database name to connect to. (This is usually same as username).
-	$config['sqlDatabase'] = 'pokemon';
+	$config['sqlDatabase'] = 'pokeallstars';
 
 	// Hostname is usually localhost or 127.0.0.1.
 	$config['sqlHost'] = 'localhost';
@@ -365,42 +365,43 @@
 
 	$config['player'] = array(
 		'base' => array(
-			'level' => 30,
-			'health' => 600,
-			'mana' => 600,
+			'level' => 99,
+			'health' => 990,
+			'mana' => 990,
 			'cap' => 6,
-			'soul' => 10,
+			'soul' => 250,
 		),
 		// Health, mana cap etc are calculated with $config['vocations_gain'] and 'base' values of $config['player']
 		'create' => array(
-			'level' => 10,
+			'level' => 99,
 			'novocation' => array( // Vocation id 0 (No vocation) special settings
-				'level' => 1,
-				'forceTown' => true,
-				'townId' => 1
+			'health' => 990,
+			'mana' => 990,
+			'cap' => 6,
+			'soul' => 250,
 			),
 			'skills' => array( // See $config['vocations'] for proper vocation names of these IDs
 				// No vocation
 				0 => array(
-					'magic' => 10,
-					'fist' => 1,
-					'club' => 2,
-					'axe' => 3,
-					'sword' => 4,
-					'dist' => 5,
-					'shield' => 6,
-					'fishing' => 7,
+					'magic' => 22,
+					'fist' => 33,
+					'club' => 44,
+					'axe' => 55,
+					'sword' => 66,
+					'dist' => 77,
+					'shield' => 88,
+					'fishing' => 99,
 				),
 				// Sorcerer
 				1 => array(
-					'magic' => 10,
-					'fist' => 1,
-					'club' => 2,
-					'axe' => 3,
-					'sword' => 4,
-					'dist' => 5,
-					'shield' => 6,
-					'fishing' => 7,
+					'magic' => 22,
+					'fist' => 33,
+					'club' => 44,
+					'axe' => 55,
+					'sword' => 66,
+					'dist' => 77,
+					'shield' => 88,
+					'fishing' => 99,
 				),
 				// Druid
 				2 => array(
@@ -479,11 +480,11 @@
 
 	// ONLY FOR TFS 0.2 (TFS 0.3/4 users don't need to care about this, as its fully loaded from db)
 	$config['house'] = array(
-		'house_file' => 'C:\test\Mystic Spirit_0.2.5\data\world\forgotten-house.xml',
+		'house_file' => 'C:\xampp\htdocs\server\data\world\map-house.xml',
 		'price_sqm' => '50', // price per house sqm
 	);
 
-	$config['delete_character_interval'] = '3 DAY'; // Delay after user character delete request is executed, ex: 1 DAY, 2 HOUR, 3 MONTH etc.
+	$config['delete_character_interval'] = '1 HOUR'; // Delay after user character delete request is executed, ex: 1 DAY, 2 HOUR, 3 MONTH etc.
 
 	$config['validate_IP'] = false;
 	$config['salt'] = false;
